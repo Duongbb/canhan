@@ -13,6 +13,10 @@ a{
 ul li{
     list-style: none;
 }
+#title i{
+    color: #91ecb1;
+    font-size: 25px;
+}
 #header{
     width: 100%;
     height: 158px;
@@ -32,31 +36,111 @@ ul li{
     height: 60px;
     background-color: #008830;
 }
-#nav .menu ul{
+#nav a{
+    color: #fff;
+}
+ .menu ul{
     padding-left: 70px;
 }
-#nav .menu ul a:hover{
+ .menu ul li:hover{
     background-color: #1d490c;
     color:#e1ff6b;
 }
 #nav .action ul{
     padding-right: 70px;
 }
-#nav .action ul a{
-
-    float: right;
+ .action ul li{
+    float: left;
+    position: relative;
     color: #fff;
-    padding: 22px 8px ;
+    padding: 22px 4px;
+    left: 12%;
  
 }
-#nav .menu ul a{
+.action i{
+    font-size: 18px;
+    margin: 0 10px;
+}
+.menu ul li{
     float: left;
     position: relative;
     padding: 22px 15px ;
     text-transform:uppercase ;
-    color: #fff;
 }
 
+.slide-menu{
+    display: none;
+    height: 275px;
+    width: 140px;
+    position: absolute;
+    background-color: #279146;
+    transition: 0.5s ease;
+    left: 30px;
+    top: 22px;
+}
+.slide-menu ul li {
+    width: 110px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    height: 10px;
+}
+input{
+    display: none;
+    visibility: hidden;
+}
+.toggle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #279146;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.toggle .common{
+    position:absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: 0.3 ease;
+}
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.toggle .middle_line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input:checked ~ .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+input:checked ~ .toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+input:checked ~ .toggle .middle_line{
+   opacity: 0;
+    transform: translateX(20px);
+}
+input:checked ~ .slide-menu{
+    display: block;
+    z-index: 1;
+    /* transform: translateX(0) */
+}
 .slide-first{
     display: flex;
     width: 860px;
@@ -95,16 +179,22 @@ ul li{
 
 
 .main-item{
-    width: 879px;
+    width: 876px;
     height: 496px;
 }
+#title{
+    display: flex;
+    border-bottom: 2px solid #008931 ;
+}
+
 .main-item h1{
+    width: 850px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
     color: #008931;
     padding-bottom: 15px;
-    border-bottom: 2px solid #008931 ;
+    
 }
 .main-item #item1{
     width: 500px;
@@ -117,7 +207,7 @@ ul li{
     margin: 0px;
     font-weight: bold;
     font-size: 15px;
-    line-height: 28px;
+    line-height: 24px;
 }
 .main-item .item{
     float: left;
@@ -130,16 +220,16 @@ ul li{
     display: flex;
 }
 .main-file{
-    width: 879px;
+    width: 876px;
     height: 400px;
 }
 .main-file h1 {
+    width: 850px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
     color: #008931;
     padding-bottom: 15px;
-    border-bottom: 2px solid #008931 ;
 }
 .file{
     display: flex;
@@ -156,7 +246,7 @@ ul li{
 #new{
     width: 289px;
     height: 596px;
-    padding-left:30px ;
+    padding-left:40px ;
 }
 #non-main{
     width: 870px;
@@ -305,9 +395,10 @@ ul li{
 }
 .event-tittle{
     height: 30px;
-    border-bottom: 2px solid #008830;
+    width: 1170px;
 }
 .event-tittle  h1{
+    width: 1150px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
@@ -381,7 +472,6 @@ ul li{
 }
 #admissions-item1 p{
     margin: 0px;
-    font-weight: bold;
 }
 #admissions-content{
    padding: 5px 20px;
@@ -404,15 +494,15 @@ ul li{
     float: left;
 }
 .face{
-    width: 888px;
+    width: 876px;
     height: 518px;
     padding: 20px 0px;
 }
 .face-tittle{
     height: 30px;
-    border-bottom: 2px solid #008830;
 }
 .face-tittle  h1{
+    width: 850px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
@@ -457,7 +547,7 @@ ul li{
 #lib{   
     height: 350px;
     padding: 0px 80px;
-    width: 1200px;
+    width: 1187px;
 }
 #lib-list{
     float: left;
@@ -473,7 +563,6 @@ ul li{
     width: 600px;
     height: 370px;
     background: url('/img/lebegiang.jpg');
-    position: relative;
     overflow: hidden;
 }
 .lib1:hover .lib1-text {
@@ -482,9 +571,9 @@ ul li{
 
 }
 .lib2{
-    width: 580px;
+    width: 577px;
     height: 380px;
-    padding-left:20px ;
+    padding-left:10px ;
     
 }
 
@@ -516,7 +605,7 @@ ul li{
 #lib-item2{
     width: 270px;
     height:165px;
-    margin: 0px 11px;
+    margin: 0px 4px;
     background: url('/img/thachphu.jpg');
     position: relative;
     overflow: hidden;
@@ -605,10 +694,10 @@ ul li{
 #logo{
     height: 186px;
     padding: 30px 80px;
-    width: 1200px;
+    width: 1187px;
 }
 .logo-list{
-    width: 211px;
+    width: 208px;
     text-align: center;
     position:relative;
     float: left;

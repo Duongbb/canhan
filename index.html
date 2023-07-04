@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sở giáo dục và đạo tạo Bến Tre</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="/img/">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -37,13 +39,34 @@
             </div>
             <div class="action">
                 <ul>
-                    <li><a href="#"><img src="./img/menu.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="/img/search.png" alt=""></a></li>
-                    <li><a href="#">Đăng Nhập</a></li>
-                    <li><a href="#"><img src="/img/user.jpg" alt=""></a></li>
-
+                    <!-- <li><a href="#"><img src="./img/menu.jpg" alt=""></a></li> -->
+                    <li><a href="#"><i class="fas fa-user"></i>Đăng Nhập</a></li>
+                    <li><a href="#"> <i class="fas fa-search"></i></a></li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <div class="toggle">
+                                <span class="top_line common"></span>
+                                <span class="middle_line common"></span>
+                                <span class="bottom_line common"></span>
+                            </div>
+                            <div class="slide-menu">
+                                <ul>
+                                    <li><a href="#">Trang chủ</a></li>
+                                    <li><a href="#">Giới Thiệu</a></li>
+                                    <li><a href="#">Tin Tức</a></li>
+                                    <li><a href="#">DVC Trực Tuyến</a></li>
+                                    <li><a href="#">Văn Bản</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </label>
+                    </li>
                 </ul>
+                
+                <div style="clear: none;"></div>
             </div>
+           
         </div>
         <!-- end nav -->
         <div style="clear: none;"></div>
@@ -58,12 +81,12 @@
                         <div id="slide-content">
                             <div class="title">
                                 Học sinh Bến Tre lần đầu tiên giành giải Nhất quốc gia thi viết thư UPU
-                            
+
                             </div>
                             <div class="title-small"><a href="#">
-                                Ngày 19/5, Bộ TT&TT, Bộ GD&ĐT, Trung ương Đoàn TNCS Hồ Chí Minh,
-                                Tổng công ty Bưu Điện Việt Nam, Báo Thiếu niên Tiền Phong và Nhi đồng đã tổ chức
-                            </a></div>
+                                    Ngày 19/5, Bộ TT&TT, Bộ GD&ĐT, Trung ương Đoàn TNCS Hồ Chí Minh,
+                                    Tổng công ty Bưu Điện Việt Nam, Báo Thiếu niên Tiền Phong và Nhi đồng đã tổ chức
+                                </a></div>
                         </div>
                     </div>
                     <div id="list">
@@ -73,9 +96,11 @@
                             </div>
                             <div id="second-content">
                                 <a href="#">
-                                    
-                                <h2>Trao thư khen của Thường trực Tỉnh uỷ cho học sinh đạt giải Cuộc thi Viết thư quốc tế UPU</h2>                                </a> 
-                               
+
+                                    <h2>Trao thư khen của Thường trực Tỉnh uỷ cho học sinh đạt giải Cuộc thi Viết thư
+                                        quốc tế UPU</h2>
+                                </a>
+
                                 <p>30/5/2023</p>
                             </div>
                         </div>
@@ -85,8 +110,8 @@
                             </div>
                             <div id="second-content">
                                 <a href="#">
-                                <h2>Hoàn thành bồi dưỡng giáo viên theo chương tình giáo dục phổ thông 2018</h2>                                    
-                                </a>                    
+                                    <h2>Hoàn thành bồi dưỡng giáo viên theo chương tình giáo dục phổ thông 2018</h2>
+                                </a>
                                 <p>30/5/2023</p>
                             </div>
                         </div>
@@ -96,7 +121,7 @@
                             </div>
                             <div id="second-content">
                                 <a href="#">
-                                <h2>Bến Tre tổ chức đăng ký dự thi tốt nghiệp trung học phổ thông năm 2023</h2>                                    
+                                    <h2>Bến Tre tổ chức đăng ký dự thi tốt nghiệp trung học phổ thông năm 2023</h2>
                                 </a>
                                 <p>30/5/2023</p>
                             </div>
@@ -107,7 +132,8 @@
                             </div>
                             <div id="second-content">
                                 <a href="#">
-                                <h2>Bộ GD&ĐT ban hành Bộ chỉ số đánh giá mức độ chuyển đổi số của cơ sở giáo dục phổ thông</h2>                               
+                                    <h2>Bộ GD&ĐT ban hành Bộ chỉ số đánh giá mức độ chuyển đổi số của cơ sở giáo dục phổ
+                                        thông</h2>
                                 </a>
                                 <p>30/5/2023</p>
                             </div>
@@ -118,16 +144,21 @@
                 </div>
                 <div id="main">
                     <div class="main-item">
-                        <h1>công nghệ thông tin và chuyển đổi số</h1>
+                        <div id="title">
+                            <h1>công nghệ thông tin và chuyển đổi số </h1>
+                            <a href="#"> <i class="	fas fa-arrow-circle-right"></i></a>
+
+                        </div>
                         <div id="item1" class="item">
                             <img src="/img/chidan.jpg" alt="">
                             <a href="#">
                                 <p>
-                                Bộ Giáo dục và Đào tạo ban hành Bộ chỉ số đánh giá mức độ chuyển đổi số của sở giáo dục
-                                phổ thông
-                            </p>
+                                    Bộ Giáo dục và Đào tạo ban hành Bộ chỉ số đánh giá mức độ chuyển đổi số của sở giáo
+                                    dục
+                                    phổ thông
+                                </p>
                             </a>
-                            
+
                         </div>
                         <div id="item2" class="item">
                             <div class="list-item2">
@@ -136,7 +167,7 @@
                                 </div>
                                 <div id="second-content">
                                     <a href="#">
-                                    <h2>Chọn 27 trường thí điểm triển khai nền tảng dạy học trực tuyến.</h2>
+                                        <h2>Chọn 27 trường thí điểm triển khai nền tảng dạy học trực tuyến.</h2>
                                     </a>
                                     <p>14/12/2022</p>
                                 </div>
@@ -147,7 +178,8 @@
                                 </div>
                                 <div id="second-content">
                                     <a href="#">
-                                    <h2>Chuẩn bị điều kiện để tổ chức vận hành, khi thác Trung tâm điều hành thông minh.</h2>
+                                        <h2>Chuẩn bị điều kiện để tổ chức vận hành, khi thác Trung tâm điều hành thông
+                                            minh.</h2>
                                     </a>
                                     <p>14/12/2022</p>
                                 </div>
@@ -158,7 +190,8 @@
                                 </div>
                                 <div id="second-content">
                                     <a href="#">
-                                    <h2>Trường THPT Huỳnh Tấn Phát chuyển đổi số đạt 94/100 điểm, tiệm cận trường học ứng dụng</h2>
+                                        <h2>Trường THPT Huỳnh Tấn Phát chuyển đổi số đạt 94/100 điểm, tiệm cận trường
+                                            học ứng dụng</h2>
                                     </a>
                                     <p>14/12/2022</p>
                                 </div>
@@ -167,7 +200,12 @@
                     </div>
                     <div style="clear: both;"></div>
                     <div class="main-file">
-                        <h1>Văn bản mới</h1>
+                        <div id="title">
+                            <h1>Văn bản mới</h1>
+                            <a href="#"><i class="	fas fa-arrow-circle-right"></i></a>
+
+                        </div>
+
                         <div id="list-file">
                             <div class="file">
                                 <div id="file-img" class="file-item">
@@ -176,10 +214,11 @@
                                 <div id="file-title" class="file-item">
                                     <a href="#">
                                         <h2>CV 1412-TTr</h2>
-                                    <h3>Thanh tra, kiểm tra công tác chuẩn bị in sao đề thi và chuẩn bị tổ chức Kỳ thi
-                                        tốt nghiệp THPT năm 2023.</h3>
+                                        <h3>Thanh tra, kiểm tra công tác chuẩn bị in sao đề thi và chuẩn bị tổ chức Kỳ
+                                            thi
+                                            tốt nghiệp THPT năm 2023.</h3>
                                     </a>
-                                    
+
                                 </div>
                             </div>
                             <div class="file">
@@ -188,9 +227,10 @@
                                 </div>
                                 <div id="file-title" class="file-item">
                                     <a href="#">
-                                    <h2>CV 1409-QLCL&CNTT</h2>
-                                    <h3>Hội nghị - Tập huấn nghiệp vụ thi cho cán bộ coi thi Kỳ thi tốt nghiệp THPT năm 2023.</h3>
-                                </a>
+                                        <h2>CV 1409-QLCL&CNTT</h2>
+                                        <h3>Hội nghị - Tập huấn nghiệp vụ thi cho cán bộ coi thi Kỳ thi tốt nghiệp THPT
+                                            năm 2023.</h3>
+                                    </a>
                                 </div>
                             </div>
                             <div class="file">
@@ -199,9 +239,10 @@
                                 </div>
                                 <div id="file-title" class="file-item">
                                     <a href="#">
-                                    <h2>CV 1399_trH-TX</h2>
-                                    <h3>Hưởng ứng cuộc thi "Ý tưởng Nghiên cứu Khoa học Kỹ thuật" lần I năm 2023 của Trường Đại học Trà Vinh.</h3>
-                                </a>
+                                        <h2>CV 1399_trH-TX</h2>
+                                        <h3>Hưởng ứng cuộc thi "Ý tưởng Nghiên cứu Khoa học Kỹ thuật" lần I năm 2023 của
+                                            Trường Đại học Trà Vinh.</h3>
+                                    </a>
                                 </div>
                             </div>
                             <div class="file">
@@ -210,9 +251,10 @@
                                 </div>
                                 <div id="file-title" class="file-item">
                                     <a href="#">
-                                    <h2>CV 1405_TrH-TX</h2>
-                                    <h3>Điều chỉnh thời gian bồi dưỡng tập huấn sử dụng SGK Lịch sử và Địa lý lớp 8 bộ sách Cánh Diều, năm học 2023-2024.</h3>
-                                </a>
+                                        <h2>CV 1405_TrH-TX</h2>
+                                        <h3>Điều chỉnh thời gian bồi dưỡng tập huấn sử dụng SGK Lịch sử và Địa lý lớp 8
+                                            bộ sách Cánh Diều, năm học 2023-2024.</h3>
+                                    </a>
                                 </div>
                             </div>
                             <div class="file">
@@ -221,11 +263,11 @@
                                 </div>
                                 <div id="file-title" class="file-item">
                                     <a href="#">
-                                    <h2>CV 1409-QLCL&CNTT</h2>
-                                    <h3>Hội nghị - Tập huấn nghiệp vụ thi cho cán bộ coi thi Kỳ thi tốt nghiệp THPT
-                                        2023.</h3>
+                                        <h2>CV 1409-QLCL&CNTT</h2>
+                                        <h3>Hội nghị - Tập huấn nghiệp vụ thi cho cán bộ coi thi Kỳ thi tốt nghiệp THPT
+                                            2023.</h3>
                                     </a>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -241,8 +283,10 @@
                         <a href="#">
                             <h1>Tin mới</h1>
                         </a>
-                    <a href="#"> <h1>Tin đọc nhiều</h1></a>
-                        
+                        <a href="#">
+                            <h1>Tin đọc nhiều</h1>
+                        </a>
+
                     </div>
                     <div id="new-list">
                         <div class="new-file">
@@ -275,7 +319,8 @@
                             </div>
                             <div id="file-title" class="file-item">
                                 <a href="#">
-                                    <h2>Nhiệm vụ quản lý chất lượng, công nghệ thông tin và chuyển đổi số năm học 2022-2023
+                                    <h2>Nhiệm vụ quản lý chất lượng, công nghệ thông tin và chuyển đổi số năm học
+                                        2022-2023
                                 </a>
                                 </h2>
                             </div>
@@ -300,31 +345,56 @@
                             </div>
                             <div id="file-title" class="file-item">
                                 <a href="#">
-                                    <h2>Chuẩn bị các điều kiện để tổ chức vận hành, khai thác Trung tâm điều hành thông minh ngành giáo</h2>
+                                    <h2>Chuẩn bị các điều kiện để tổ chức vận hành, khai thác Trung tâm điều hành thông
+                                        minh ngành giáo</h2>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <img src="/img/thongbao.jpg" alt="">
                     <div id="noti">
-                        <a href="#"> <h2> >> Thông báo nhận Giấy chứng nhận, giấy khen HSG cấp tỉnh lớp 9, lớp 12</h2></a>
-                        <a href="#"> <h2> >> Nhắc cập nhật dữ liệu báo cáo thông kê</h2></a>
-                        <a href="#"> <h2> >> Thông báo cập nhậy bổ sung báo cáo thống kê đầu năm</h2></a>
+                        <a href="#">
+                            <h2> >> Thông báo nhận Giấy chứng nhận, giấy khen HSG cấp tỉnh lớp 9, lớp 12</h2>
+                        </a>
+                        <a href="#">
+                            <h2> >> Nhắc cập nhật dữ liệu báo cáo thông kê</h2>
+                        </a>
+                        <a href="#">
+                            <h2> >> Thông báo cập nhậy bổ sung báo cáo thống kê đầu năm</h2>
+                        </a>
                     </div>
                     <div id="info">
                         <div class="info-tittle">
                             <h1>các phòng GD&ĐT và đơn vị trực thuộc sở </h1>
                         </div>
                         <div class="info-item">
-                            <a href="#"><h2> >> Phòng GD&ĐT Bình Đại (23784)</h2></a>
-                            <a href="#"><h2> >> Phòng GD&ĐT Thạch Phú (46690)</h2></a>
-                            <a href="#"><h2> >> Phòng GD&ĐT Chợ Lách (35619)</h2></a>
-                            <a href="#"><h2> >> Phòng GD&ĐT Mỏ Cày Nam (39363)</h2></a>
-                            <a href="#"><h2> >> Phòng GD&ĐT Giồng Trôm (24727)</h2></a>
-                            <a href="#"><h2> >> Phòng GD&ĐT Ba Tri (35835)</h2></a>
-                            <a href="#"><h2> >> Phòng GD&ĐT thành phố Bến Tre (57461)</h2></a>
-                            <a href="#"><h2> >> Phòng GD&ĐT Châu Thành (50099)</h2></a>
-                            <a href="#"><h2> >> Phòng GD&ĐT Mỏ Cày Bắc (49618)</h2></a>
+                            <a href="#">
+                                <h2> >> Phòng GD&ĐT Bình Đại (23784)</h2>
+                            </a>
+                            <a href="#">
+                                <h2> >> Phòng GD&ĐT Thạch Phú (46690)</h2>
+                            </a>
+                            <a href="#">
+                                <h2> >> Phòng GD&ĐT Chợ Lách (35619)</h2>
+                            </a>
+                            <a href="#">
+                                <h2> >> Phòng GD&ĐT Mỏ Cày Nam (39363)</h2>
+                            </a>
+                            <a href="#">
+                                <h2> >> Phòng GD&ĐT Giồng Trôm (24727)</h2>
+                            </a>
+                            <a href="#">
+                                <h2> >> Phòng GD&ĐT Ba Tri (35835)</h2>
+                            </a>
+                            <a href="#">
+                                <h2> >> Phòng GD&ĐT thành phố Bến Tre (57461)</h2>
+                            </a>
+                            <a href="#">
+                                <h2> >> Phòng GD&ĐT Châu Thành (50099)</h2>
+                            </a>
+                            <a href="#">
+                                <h2> >> Phòng GD&ĐT Mỏ Cày Bắc (49618)</h2>
+                            </a>
                         </div>
                     </div>
                     <img class="branch" src="/img/phanhieu.jpg" alt="">
@@ -353,7 +423,7 @@
                         <div class="item-info">
                             <h2>Trường THPT Chuyên Bến Tre</h2>
                             <p>Phường 2 -TP.Bến Tre, tỉnh Bến Tre
-                               <a href="#">  http://thpthuyenbentre.edu.vn </a>
+                                <a href="#"> http://thpthuyenbentre.edu.vn </a>
                             </p>
 
                         </div>
@@ -451,19 +521,25 @@
                         </div>
                     </div>
                 </div>
-                <div id="next-list"><a href="#">Xem thêm</a></div>
+                <div id="next-list"><a href="#">Xem thêm <i class='fas fa-arrow-circle-right'></i></a></div>
 
             </div>
         </div>
         <div id="event">
-            <div class="event-tittle">
+            <div class="event-tittle" id="title">
                 <h1>tin tức - sự kiện</h1>
+                <a href="#">
+                    <i class='fas fa-arrow-circle-right'></i>
+                </a>
+
             </div>
             <div class="evnet-list">
                 <div id="event-info">
                     <div class="event-item">
                         <img src="/img/chonlop.jpg" alt="">
-                     <a href="#">   <h2>Chọn 27 trường thí điểm triển khai nền tảng dạy học trực tuyến</h2></a>
+                        <a href="#">
+                            <h2>Chọn 27 trường thí điểm triển khai nền tảng dạy học trực tuyến</h2>
+                        </a>
                         <p>22/12/2022</p>
                     </div>
                 </div>
@@ -472,7 +548,10 @@
                 <div id="event-info">
                     <div class="event-item">
                         <img src="/img/molop.jpg" alt="">
-                   <a href="#">     <h2>Khai giảng các lớp STEM và thiết kế video học liệu, thí nghiệm ảo cho cán bộ quản lý và giáo viên</h2></a>
+                        <a href="#">
+                            <h2>Khai giảng các lớp STEM và thiết kế video học liệu, thí nghiệm ảo cho cán bộ quản lý và
+                                giáo viên</h2>
+                        </a>
                         <p>21 /12/2022</p>
                     </div>
                 </div>
@@ -481,7 +560,10 @@
                 <div id="event-info">
                     <div class="event-item">
                         <img src="/img/olympia.jpg" alt="">
-                     <a href="#">   <h2>Nam sinh trường chuyên Bến Tre điềm tĩnh ẫm vòng nguyệt quế Đường lên đỉnh Olympia 23</h2></a>
+                        <a href="#">
+                            <h2>Nam sinh trường chuyên Bến Tre điềm tĩnh ẫm vòng nguyệt quế Đường lên đỉnh Olympia 23
+                            </h2>
+                        </a>
                         <p>21/12/2022</p>
                     </div>
                 </div>
@@ -490,7 +572,9 @@
                 <div id="event-info">
                     <div class="event-item">
                         <img src="/img/traothuong.jpg" alt="">
-                        <a href="#"><h2>Bến Tre có 3 sản phẩm vào top 150 sản phẩm đổi mới sáng tạo giáo dục xuất sắc</h2></a>
+                        <a href="#">
+                            <h2>Bến Tre có 3 sản phẩm vào top 150 sản phẩm đổi mới sáng tạo giáo dục xuất sắc</h2>
+                        </a>
                         <p>21/12/2022</p>
                     </div>
                 </div>
@@ -498,14 +582,18 @@
         </div>
         <div style="clear: both;"></div>
         <div id="event">
-            <div class="event-tittle">
+            <div class="event-tittle" id="title">
                 <h1>thông tin điều hành</h1>
+                <a href="#"><i class='fas fa-arrow-circle-right'></i> </a>
+
             </div>
             <div class="evnet-list">
                 <div id="event-info">
                     <div class="event-item">
                         <img src="/img/chungtri.jpg" alt="">
-                      <a href="#">  <h2>Hoàn thành chứng chỉ bồi dưỡng giáo viên chương trình giáo dục phổ thông 2018</h2></a>
+                        <a href="#">
+                            <h2>Hoàn thành chứng chỉ bồi dưỡng giáo viên chương trình giáo dục phổ thông 2018</h2>
+                        </a>
                         <p>21/12/2022</p>
                     </div>
                 </div>
@@ -514,7 +602,9 @@
                 <div id="event-info">
                     <div class="event-item">
                         <img src="/img/duht.jpg" alt="">
-                  <a href="#">      <h2>Hội thảo về Hoạt động trải nghiệm, hướng nghiệp</h2></a>
+                        <a href="#">
+                            <h2>Hội thảo về Hoạt động trải nghiệm, hướng nghiệp</h2>
+                        </a>
                         <p>21/12/2022</p>
                     </div>
                 </div>
@@ -523,7 +613,9 @@
                 <div id="event-info">
                     <div class="event-item">
                         <img src="/img/taphuan.jpg" alt="">
-                     <a href="#">   <h2>Nâng cao kiến thức, kỹ năng phòng chống thuốc lá mới cho học sinh</h2></a>
+                        <a href="#">
+                            <h2>Nâng cao kiến thức, kỹ năng phòng chống thuốc lá mới cho học sinh</h2>
+                        </a>
                         <p>21/12/2022</p>
                     </div>
                 </div>
@@ -532,7 +624,9 @@
                 <div id="event-info">
                     <div class="event-item">
                         <img src="/img/traogiai.jpg" alt="">
-                      <a href="#">  <h2>Trao 46 giải thưởng Trương Vĩnh Ký lần thứ XVIII, năm học 2021-2022</h2></a>
+                        <a href="#">
+                            <h2>Trao 46 giải thưởng Trương Vĩnh Ký lần thứ XVIII, năm học 2021-2022</h2>
+                        </a>
                         <p>21/12/2022</p>
                     </div>
                 </div>
@@ -548,7 +642,7 @@
                     <div class="admissions ">
                         <div class="admissions-tittle">
                             <h1>thông tin tuyển sinh </h1>
-                             <ul>
+                            <ul>
 
                                 <li><a href="#">Tư vấn</a></li>
                                 <li><a href="#">Tra cứu</a></li>
@@ -560,7 +654,9 @@
                         <div style="clear: both;"></div>
                         <div id="admissions-item1" class="admissions-item">
                             <img src="/img/backgr.jpg" alt="">
-                            <a href="#"><h1>Thông tin tuyển sinh vào lớp 10 trường Trung học phổ thông An Thới</h1></a>
+                            <a href="#">
+                                <h1>Thông tin tuyển sinh vào lớp 10 trường Trung học phổ thông An Thới</h1>
+                            </a>
                             <p>
                                 Mỗi thí sinh làm ba bài thi gồm Toán, Ngữ văn (vòng 1) và môn chuyên (vòng 2). Với thi
                                 sinh thi chuyên Tin, các em sẽ làm bài thi môn Toán.
@@ -571,25 +667,33 @@
                                 <div class="list-admiss">
                                     <div id="admissions-content">
                                         <img src="/img/thongtints.jpg " alt="">
-                                       <a href="#"> <h2>Thông tin tuyển sinh trường THPT Phan Văn Trị</h2></a>
+                                        <a href="#">
+                                            <h2>Thông tin tuyển sinh trường THPT Phan Văn Trị</h2>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="list-admiss">
                                     <div id="admissions-content">
                                         <img src="/img/tranvankiet.jpg" alt="">
-                                        <a href="#"><h2>Thông tin tuyển sinh trường THPT Trần Văn Kiết</h2></a>
+                                        <a href="#">
+                                            <h2>Thông tin tuyển sinh trường THPT Trần Văn Kiết</h2>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="list-admiss">
                                     <div id="admissions-content">
                                         <img src="/img/thanhphuoc.jpg" alt="">
-                                        <a href="#"><h2>Thông tin tuyển sinh lớp 10 trường THPT Thạch Phước</h2></a>
+                                        <a href="#">
+                                            <h2>Thông tin tuyển sinh lớp 10 trường THPT Thạch Phước</h2>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="list-admiss">
                                     <div id="admissions-content">
                                         <img src="/img/tanke.jpg" alt="">
-                                        <a href="#"><h2>Thông tin tuyển sinh lớp 10 trường THPT Tán Kế</h2></a>
+                                        <a href="#">
+                                            <h2>Thông tin tuyển sinh lớp 10 trường THPT Tán Kế</h2>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -598,17 +702,21 @@
                     </div>
                     <div style="clear: both;"></div>
                     <div class="face ">
-                        <div class="face-tittle">
+                        <div class="face-tittle" id="title">
                             <h1>gương sáng </h1>
+                            <a href="#"><i class='fas fa-arrow-circle-right'></i></a>
                         </div>
                         <div style="clear: both;"></div>
                         <div id="admissions-item1" class="admissions-item">
                             <img src="/img/svd.jpg" alt="">
-                            <a href="#"><h1>Thông báo kết quả xét chọn học sinh tham gia Giải thể thao học sinh phổ thông toàn quốc
-                                năm 2023</h1></a>
+                            <a href="#">
+                                <h1>Thông báo kết quả xét chọn học sinh tham gia Giải thể thao học sinh phổ thông toàn
+                                    quốc
+                                    năm 2023</h1>
+                            </a>
                             <p>
-                                Sở Giáo dục và Đào tạo thông báo về việc xét chọn học sinh tham gia Giải thể thao học
-                                sinh phổ thông toàn quốc năm 2023 (Môn Bơi và môn võ Vovinam) cụ thể như sau
+                            Sở Giáo dục và Đào tạo thông báo về việc xét chọn học sinh tham gia Giải thể thao học
+                            sinh phổ thông toàn quốc năm 2023 (Môn Bơi và môn võ Vovinam) cụ thể như sau
                             </p>
                         </div>
                         <div id="admissions-item2" class="admissions-item">
@@ -616,27 +724,38 @@
                                 <div class="list-admiss">
                                     <div id="admissions-content">
                                         <img src="/img/huongdan.jpg " alt="">
-                                        <a href="#"><h2>Hướng nghiệp đăng ký thi tốt nghiệp THPT trực tuyến trên hệ thống quản lý
-                                            thi của Bộ</h2></a>
+                                        <a href="#">
+                                            <h2>Hướng nghiệp đăng ký thi tốt nghiệp THPT trực tuyến trên hệ thống quản
+                                                lý
+                                                thi của Bộ</h2>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="list-admiss">
                                     <div id="admissions-content">
                                         <img src="/img/guongmat.jpg" alt="">
-                                        <a href="#"><h2>Bến Tre hơn 85.000 thí sinh đã đăng ký dự thi tốt nghiệp trung học phổ thông
-                                            năm 2023</h2></a>
+                                        <a href="#">
+                                            <h2>Bến Tre hơn 85.000 thí sinh đã đăng ký dự thi tốt nghiệp trung học phổ
+                                                thông
+                                                năm 2023</h2>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="list-admiss">
                                     <div id="admissions-content">
                                         <img src="/img/bieudo.jpg" alt="">
-                                        <a href="#"><h2>Bến Tre đã sẵn sàng cho công tác tuyển sinh đầu cấp năm học 2023-2024</h2></a>
+                                        <a href="#">
+                                            <h2>Bến Tre đã sẵn sàng cho công tác tuyển sinh đầu cấp năm học 2023-2024
+                                            </h2>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="list-admiss">
                                     <div id="admissions-content">
                                         <img src="/img/tieubieu.jpg" alt="">
-                                        <a href="#"><h2>Hai gương mặt đạt giải kỳ thi chọn học sinh giỏi quốc gia</h2></a>
+                                        <a href="#">
+                                            <h2>Hai gương mặt đạt giải kỳ thi chọn học sinh giỏi quốc gia</h2>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -773,44 +892,54 @@
             </div>
 
         </div>
-        
+
         <div id="lib">
-            <div class="event-tittle">
+            <div class="event-tittle" id="title">
                 <h1>Thư viện Ảnh - video</h1>
+                <a href="#"> <i class='fas fa-arrow-circle-right'></i></a>
+
             </div>
-            <div style="padding: 20px 0px;">
+            <div   style="padding: 20px 0;" >
                 <div class="lib1" id="lib-list">
                     <div class="lib1-text">
                         <a href="#">
-                        <h1>Một số hình ảnh Lễ Bế giảng năm học 2022-2023</h1>
+                            <h1>Một số hình ảnh Lễ Bế giảng năm học 2022-2023</h1>
                         </a>
                     </div>
                 </div>
                 <div class="lib2" id="lib-list">
                     <div id="lib-item1" class="lib-list1">
                         <div class="lib2-text">
-                            <a href="#"><h2>Lễ bế giảng năm học THPT An Thới</h2></a>
+                            <a href="#">
+                                <h2>Lễ bế giảng năm học THPT An Thới</h2>
+                            </a>
                         </div>
                     </div>
                     <div id="lib-item2" class="lib-list1">
                         <div class="lib2-text2">
-                            <a href="#"><h2>Lễ bế giảng năm học trung tâm GDNN-GDTX Thạch Phú  </h2></a>
+                            <a href="#">
+                                <h2>Lễ bế giảng năm học trung tâm GDNN-GDTX Thạch Phú </h2>
+                            </a>
                         </div>
                     </div>
                     <div id="lib-item3" class="lib-list1">
                         <div class="lib2-text3">
-                            <a href="#"><h2>Hội thảo trải nghiệm, hướng nghiệp và trải nghiệm bộ môn cho học sinh</h2></a>
+                            <a href="#">
+                                <h2>Hội thảo trải nghiệm, hướng nghiệp và trải nghiệm bộ môn cho học sinh</h2>
+                            </a>
                         </div>
                     </div>
                     <div id="lib-item4" class="lib-list1">
                         <div class="lib2-text4">
-                            <a href="#"><h2>Trao thư khen của Thường trực Tỉnh uỷ cho học sinh đạt giải Cuộc thi viết thư</h2></a>
+                            <a href="#">
+                                <h2>Trao thư khen của Thường trực Tỉnh uỷ cho học sinh đạt giải Cuộc thi viết thư</h2>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            
+
+
         </div>
         <div style="clear: both;"></div>
         <div id="logo">
@@ -837,25 +966,26 @@
         </div>
         <div style="clear: both;"></div>
     </div>
-        <div class="container">
-            <div id="footer">
-                <h1>Trang thông tin điện tử giáo dục và đào tạo (Gd&DT) tỉnh bến tre</h1>
-                <div class="footer-tittle">
-                    <div class="footer-info" id="left">
-                        <h3>Người chịu trách nhiệm: Bà La Thị Thuý - Giám đóc Sở GD&DT Bến Tre.</h3>
-                        <h3>Địa chỉ: tầng 4-5, số 126A, Nguyễn Thị Định, Phường Phú Tân, thành phố Bến Tre, tỉnh Bến Tre.</h3>
-                        <h3>Bản quyền của Sở Giáo dục và Đào tạo Bến Tre.</h3>
-                    </div>
-                    <div class="footer-info" id="right">
-                        <h3>Điện thoại: (0275)3 822 217 </h3>
-                        <h3>Fax: (0275)3 825 090</h3>
-                        <h3>Email: vanphong.sobentre@moet.edu.vn </h3>
-                    </div>
+    <div class="container">
+        <div id="footer">
+            <h1>Trang thông tin điện tử giáo dục và đào tạo (Gd&DT) tỉnh bến tre</h1>
+            <div class="footer-tittle">
+                <div class="footer-info" id="left">
+                    <h3>Người chịu trách nhiệm: Bà La Thị Thuý - Giám đóc Sở GD&DT Bến Tre.</h3>
+                    <h3>Địa chỉ: tầng 4-5, số 126A, Nguyễn Thị Định, Phường Phú Tân, thành phố Bến Tre, tỉnh Bến Tre.
+                    </h3>
+                    <h3>Bản quyền của Sở Giáo dục và Đào tạo Bến Tre.</h3>
                 </div>
-                <div style="clear: both;"></div>
-                
+                <div class="footer-info" id="right">
+                    <h3>Điện thoại: (0275)3 822 217 </h3>
+                    <h3>Fax: (0275)3 825 090</h3>
+                    <h3>Email: vanphong.sobentre@moet.edu.vn </h3>
+                </div>
             </div>
+            <div style="clear: both;"></div>
+
         </div>
+    </div>
 
 
 </body>
