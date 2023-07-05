@@ -40,7 +40,7 @@ ul li{
     color: #fff;
 }
  .menu ul{
-    padding-left: 70px;
+    padding-left: 80px;
 }
  .menu ul li:hover{
     background-color: #1d490c;
@@ -54,7 +54,7 @@ ul li{
     position: relative;
     color: #fff;
     padding: 22px 4px;
-    left: 12%;
+    left: 10%;
  
 }
 .action i{
@@ -70,16 +70,17 @@ ul li{
 
 .slide-menu{
     display: none;
-    height: 275px;
-    width: 140px;
+    height: auto;
+    width: 164px;
     position: absolute;
     background-color: #279146;
     transition: 0.5s ease;
     left: 30px;
     top: 22px;
+    border-radius: 10px;
 }
 .slide-menu ul li {
-    width: 110px;
+    width: 135px;
     border-bottom: 1px solid #fff;
     text-align: center;
     height: 10px;
@@ -267,21 +268,21 @@ input:checked ~ .slide-menu{
     float: left;
     position: relative;
 }
-#new-tittle h1{
-    vertical-align: middle;
-}
+
 #new-tittle{
-    width: 280px;
-    height: 50px;
+    width: 290px;
+    height: 44px;
     background-color: #008830;
     line-height: 25px;
-    padding: 0 15px;
+    display: flex;
+    align-items: center;
 }
 #new-tittle h1{
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 19px;
     color: #fff;
+    margin: 15px;
 }
 .new-file{
     display: flex;
@@ -322,8 +323,16 @@ input:checked ~ .slide-menu{
     padding: 0px 80px;
 }
 .school-tittle{
+    display: flex;
+    align-items: center;
     height: 50px;
     border-bottom: 2px solid #008830;
+}
+.school-tittle ul{
+    margin: 0;
+    padding-left: 320px;
+    display: flex;
+    align-items: center;
 }
 .school-tittle  h1{
     font-weight: bold;
@@ -420,7 +429,47 @@ input:checked ~ .slide-menu{
     font-style: italic;
 }
 #table-gold{
+    position: relative;
     padding:0px 80px ;
+}
+.table-gold-title{
+    text-align: center;
+    top: 7%;
+    left: 34%;
+    position: absolute;
+    color: #fff;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+.table-gold-title h1{
+    font-size: 30px;
+}
+.table-gold-title h3{
+    font-size: 27px;
+}
+.table-gold-list{
+    position: absolute;
+    top: 30%;
+    left: 9%;
+    text-align: center;
+    padding: 10px 0;
+}
+.table-gold-item img{
+    border-radius: 50%;
+    
+}
+.table-gold-list h2 {
+    margin: 10px;
+    color: #fff;
+}
+.tbg2{
+    left: 30%;
+}
+.tbg3{
+    left: 54%;
+}
+.tbg4{
+    left: 76%;
 }
 #main-admiss{
     width: 1200px;
@@ -440,6 +489,8 @@ input:checked ~ .slide-menu{
 }
 .admissions-tittle{
     height: 50px;
+    display: flex;
+    align-items: center;
     border-bottom: 2px solid #008830;
 }
 .admissions-tittle  h1{
@@ -449,9 +500,13 @@ input:checked ~ .slide-menu{
     color: #008931;
     
 }
+.admissions-tittle ul{
+    margin: 0;
+    padding-left: 183px;
+    display: flex;
+    align-items: center;
+}
 .admissions-tittle ul a {
-    float: right;
-    position: relative;
     color: #008931;
     font-weight: bold;
     margin-left: 30px;
@@ -514,11 +569,14 @@ input:checked ~ .slide-menu{
 }
 #link-list{
     background-color: #ffffff;
-    padding-bottom: 25px;
+    padding-bottom: 13px;
 }
 .link-file{
     display: flex;
     border: 2px solid #c8c8c8;
+    align-items: center;
+    padding: 0px 15px;
+    height: 75px;
 }
 #link-img{
     vertical-align: middle;
@@ -528,18 +586,19 @@ input:checked ~ .slide-menu{
     padding: 20px 0px;
     text-align: left;
     margin-left: 25px;
-    color: #c8c8c8;
 }
-
+#link-title h2{
+    color: #6e6e6e;
+}
 .link-h1 {
     line-height: 50px;
     height: 50px;
     background-color: #008931;
     text-align: left;
+    position: relative;
   }
   
   .link-h1 a {
-    line-height: 1.5;
     display: inline-block;
     color: #f0f0f0;
     margin-left: 20px;
