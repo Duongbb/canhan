@@ -57,28 +57,50 @@ ul li {
     min-height: 1000px;
     background-color: #fff;
 }
-
-#nav {
+#menu{
+    background-color: #008931;
+}
+nav{
     display: flex;
-    width: 100%;
-    height: 60px;
-    background-color: #008830;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-items: center;
+    height: 50px;
+}
+.menu-title{
+    display: flex;
+    align-items: center;
+    padding: 0px 80px;
+}
+.menu-title li{
+    position: relative;
 }
 
-#nav a {
-    color: #fff;
+.menu-title li a{
+    color: #f0f0f0;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 16px 13px;
+
+}
+.menu-title ul.sub-menu{
+    position: absolute;
+    background-color: #008931;
+    z-index: 1;
+    width: 150px;
+    display: none;
+}
+.menu-title ul.sub-menu a{
+    font-weight: normal;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.menu-title li:hover .sub-menu{
+    display: block;
 }
 
-.menu ul {
-    padding-left: 80px;
-}
-
-.menu ul li:hover {
-    background-color: #1d490c;
-    color: #e1ff6b;
-}
 
 #nav .action ul {
     padding-right: 70px;
@@ -88,14 +110,18 @@ ul li {
     float: left;
     position: relative;
     color: #fff;
-    padding: 22px 4px;
-    left: 5px;
+    padding: 15px 4px
 
 }
 
 .action i {
     font-size: 18px;
     margin: 0 10px;
+    color: #fff;
+}
+.action a ,.slide-menu a{
+    color:#fff;
+
 }
 
 .menu ul li {
@@ -111,17 +137,17 @@ ul li {
 .slide-menu {
     display: none;
     height: auto;
-    width: 164px;
+    width: 153px;
     position: absolute;
     background-color: #279146;
     transition: 0.5s ease;
-    left: 30px;
+    left: 31px;
     top: 22px;
     border-radius: 10px;
 }
 
 .slide-menu ul li {
-    width: 135px;
+    width: 142px;
     border-bottom: 1px solid #fff;
     text-align: center;
     height: 10px;
@@ -134,12 +160,10 @@ input {
 
 .toggle {
     position: absolute;
-    top:17px;
+    top: 10px;
     height: 30px;
     width: 30px;
-    background-color: #279146;
     z-index: 1;
-    cursor: pointer;
     border-radius: 2px;
 }
 
@@ -425,7 +449,6 @@ p,
     height: 50px;
     border-bottom: 2px solid #008830;
 }
-
 .school-tittle ul {
     margin: 0;
     padding-left: 320px;
@@ -440,24 +463,32 @@ p,
     color: #008931;
 
 }
-
-.school-tittle ul a {
-    float: right;
-    position: relative;
+#next-list{
+    text-align: center;
+}
+.nav-tabs li a {
+    
     color: #656565;
     font-weight: bold;
     margin-left: 30px;
     font-size: 15px;
-
+    display: block;
+    
+}
+.nav-tabs li a::after{
+    content: "";
+    position: absolute;
+    color: #00872f;
 }
 
-.school-tittle ul a:hover {
+
+.nav-tabs li.active a::after, .nav-tabs li a:hover a::after{
     color: #00872f;
 }
 
 .school-list {
     width: 1200px;
-    height: 513px;
+    height: 400px;
 
 }
 
@@ -477,7 +508,7 @@ p,
     width: 600px;
 }
 
-.school-list #list-info h2 {
+.school-list #list-info h2, .file-item h2 {
     color: #279146;
     font-weight: bold;
 }
@@ -515,6 +546,7 @@ p,
 }
 
 #event {
+    display: block;
     height: 350px;
     padding: 0px 80px;
 }
@@ -582,6 +614,8 @@ p,
 }
 
 .table-gold-item img {
+    width: 134px;
+    height: 130;
     border-radius: 50%;
 
 }
@@ -701,7 +735,7 @@ p,
 
 .face {
     width: 888px;
-    height: 518px;
+    height: 400px;
     padding: 20px 0px;
 }
 
@@ -759,10 +793,30 @@ p,
     position: relative;
 }
 
-.link-h1 a {
+.link-h1 a{
     display: inline-block;
     color: #f0f0f0;
     margin-left: 20px;
+}
+.link-h1 ul li{
+    border-bottom: 1px solid #fff;
+}
+.link-h1 ul {
+    width: 100%;
+    display: none;
+    background-color: #279146;
+    position: absolute;
+    z-index: 1;
+}
+
+.link-h1 input[type="checkbox"] {
+    display: none;
+    /* Ẩn checkbox ban đầu */
+}
+
+.link-h1 input[type="checkbox"]:checked~ul {
+    display: block;
+    /* Hiển thị danh sách liên kết khi checkbox được chọn */
 }
 
 #lib {
@@ -852,7 +906,7 @@ p,
 }
 
 #lib-item3 {
-    width: 267px;
+    width: 268px;
     height: 165px;
     margin: 40px 10px;
     background: url('/img/hothao.jpg');
@@ -861,7 +915,7 @@ p,
 }
 
 #lib-item4 {
-    width: 270px;
+    width: 266px;
     height: 165px;
     margin: 40px 10px;
     background: url('/img/traoThu.jpg');
