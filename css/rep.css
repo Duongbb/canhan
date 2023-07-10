@@ -1,0 +1,32 @@
+@media(max-width:1200px){
+    #content{
+        width: auto;
+    }
+    #header {
+        width: 100%;
+        height: 158px;
+        background: url('/img/header.jpg');
+    }
+    
+    #logo-header {
+        display: flex;
+        align-items: center;
+        padding: 20px 6%;
+    }
+    
+    .title-header {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 18px;
+        line-height: 36px;
+        color: #00872f;
+    }
+    
+    .title-header h1 {
+        font-size: 28px;
+    }
+    
+    .title-header h2 {
+        font-size: 24px;
+    }
+}

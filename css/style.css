@@ -62,7 +62,6 @@ ul li {
 }
 nav{
     display: flex;
-    /* justify-content: space-between; */
     justify-items: center;
     height: 50px;
 }
@@ -100,7 +99,9 @@ nav{
 .menu-title li:hover .sub-menu{
     display: block;
 }
-
+.sub-menu li:hover{
+    background-color: #279146;
+}
 
 #nav .action ul {
     padding-right: 70px;
@@ -235,7 +236,8 @@ input:checked~.slide-menu {
 .info-item a,
 .event-item a,
 .admissions-item a,
-#item1 a {
+#item1 a,
+.item-info a {
     color: black;
 }
 #list{
@@ -277,7 +279,7 @@ p,
 
 
 .main-item {
-    width: 876px;
+    width: 863px;
     height: 496px;
 }
 
@@ -321,13 +323,13 @@ p,
 
 .main-item .list-item2 {
     margin-left: 15px;
-    width: 360px;
+    width: 348px;
     height: 110px;
     display: flex;
 }
 
 .main-file {
-    width: 876px;
+    width: 860px;
     height: 400px;
 }
 
@@ -342,7 +344,7 @@ p,
 
 .file {
     display: flex;
-    width: 800px;
+    width: 820px;
     height: 36px;
     padding: 14px 0;
 }
@@ -355,7 +357,7 @@ p,
 #new {
     width: 289px;
     height: 596px;
-    padding-left: 40px;
+    padding-left: 25px;
 }
 
 #non-main {
@@ -421,16 +423,20 @@ p,
 #info .info-tittle h1 {
     text-transform: uppercase;
     color: #00872f;
-    border: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
     padding: 10px 10px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
+.info-item i, #noti i {
+    font-size: 10px;
+    margin: 0 8px;
+}
 
 #info .info-item h2 {
     line-height: 30px;
-    margin: 15px 0px 0px 10px;
+    margin: 15px 0px;
     color: #323232;
 }
 
@@ -440,6 +446,7 @@ p,
 
 #school {
     height: 518px;
+    width: 1194px;
     padding: 0px 80px;
 }
 
@@ -451,7 +458,7 @@ p,
 }
 .school-tittle ul {
     margin: 0;
-    padding-left: 320px;
+    padding-left: 333px;
     display: flex;
     align-items: center;
 }
@@ -482,7 +489,7 @@ p,
 }
 
 
-.nav-tabs li.active a::after, .nav-tabs li a:hover a::after{
+.nav-tabs li.active a::after{
     color: #00872f;
 }
 
@@ -548,12 +555,13 @@ p,
 #event {
     display: block;
     height: 350px;
+    width: 1200px;
     padding: 0px 80px;
 }
 
 .event-tittle {
     height: 30px;
-    width: 1170px;
+    width: 1172px;
 }
 
 .event-tittle h1 {
@@ -565,9 +573,7 @@ p,
 
 }
 
-.evnet-list {
-    width: 1200px;
-}
+
 
 .event-item {
     padding: 20px 20px 10px 0px;
@@ -584,7 +590,7 @@ p,
 
 #table-gold {
     position: relative;
-    padding: 0px 80px;
+    padding: 0px 70px;
 }
 
 .table-gold-title {
@@ -723,11 +729,11 @@ p,
 #admiss-info {
     width: 437px;
     height: 340px;
-    padding: 16px 0px;
+    
 }
 
 .list-admiss {
-    margin: 0 15px;
+    margin: 16px 15px;
     width: 188px;
     position: relative;
     float: left;
@@ -804,9 +810,12 @@ p,
 .link-h1 ul {
     width: 100%;
     display: none;
-    background-color: #279146;
+    background-color: #008931;
     position: absolute;
     z-index: 1;
+}
+.link-h1 li:hover{
+    background-color: #279146;
 }
 
 .link-h1 input[type="checkbox"] {
