@@ -419,6 +419,10 @@
         max-width: 390px;
         height: 110rem;
     }
+    #non-main {
+    width: auto;
+    height: 1632px;
+}
 
     .admissions {
         max-width: 390px;
@@ -872,6 +876,7 @@
     #second-img img {
         width: 132px;
     }
+   
 
     #second-content h2,
     p,
@@ -1188,7 +1193,7 @@
 
     #main-admiss {
         width: auto;
-        height: 708px;
+        height: 740px;
         padding: 30px 0px 0px 50px;
     }
 
@@ -1316,5 +1321,143 @@
         height: 350px;
         padding: 0px 50px;
         width: auto;
+    }
+    .lib1 {
+        width: 374px;
+        height: 234px;
+        overflow: hidden;
+    }
+    .lib1 img{
+        width: 374px;
+        height: 234px;
+    }
+    .lib1-text {
+        background-color: rgba(3, 3, 3, 0.2);
+        padding: 21px 10px;
+        position: absolute;
+        bottom: -59px;
+        width: 354px;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+    .lib1-text h1 {
+        color: #fff;
+        font-size: 15px;
+    }
+    .lib2 {
+        width: 360px;
+        height: 252px;
+        padding-left: 10px;
+    }
+    .lib2 img{
+        width: 175px;
+        height: 110px;
+    }
+    .lib2-text {
+        background-color: rgba(3, 3, 3, 0.2);
+        padding: 15px 8px;
+        position: absolute;
+        bottom: -45px;
+        width: 165px;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+    #lib-item1 {
+        width: 173px;
+        height: 110px;
+        margin: 0px 3px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    
+    #lib-item2 {
+        width: 173px;
+        height: 110px;
+        margin: 0px 4px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #lib-item3 {
+        width: 173px;
+        height: 110px;
+        margin: 14px 3px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #lib-item4 {
+        width: 173px;
+        height: 110px;
+        margin: 14px 4px;
+        position: relative;
+        overflow: hidden;
+    }
+    .lib2-text2 {
+        background-color: rgba(3, 3, 3, 0.2);
+        padding: 8px 15px;
+        position: absolute;
+        bottom: -45px;
+        width: 165px;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+    
+    .lib2-text3 {
+        background-color: rgba(3, 3, 3, 0.2);
+        padding: 8px 5px;
+        position: absolute;
+        bottom: -45px;
+        width: 165px;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+    .lib2-text4 {
+        background-color: rgba(3, 3, 3, 0.2);
+        padding: 8px 5px;
+        position: absolute;
+        bottom: -45px;
+        width: 165px;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    }
+    .lib-list1 h2 {
+        color: #fff;
+        font-size: 9px;
+    }
+    #logo {
+        height: 186px;
+        padding: 0px 50px;
+        width:  auto;
+    }
+    .logo-list {
+        width: 140px;
+        text-align: center;
+        position: relative;
+        float: left;
+        padding:4px;
+    }
+    .logo-list img{
+        width: 140px;
+    }
+    .logo-list h1 {
+        font-size: 8px;
+        margin: 12px 0;
+    }
+    #footer h1 {
+        text-align: center;
+        padding: 30px 0 25px 0;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #fff;
+    }
+    .footer-tittle {
+        height: 102px;
+        padding: 0 ;
+        line-height: 25px;
+    }
+    .footer-tittle h3{
+        font-size: 11px;
     }
 }
