@@ -375,8 +375,12 @@
         font-size: 8px;
     }
 
+
+
     #table-gold .table-gold-item img {
-        width: 50px;
+        width: 45px;
+        height: 45px;
+        margin: 1px 0;
     }
 
     .table-gold-info {
@@ -385,8 +389,14 @@
         line-height: 7px;
     }
 
-    #table-gold .table-gold-list h2 {
+    #table-gold .table-gold-list h2 {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         font-size: 4px;
+    }
+    .table-gold-item{
+        border-width: 1px;
+        padding: 1px;
+        width: 48px;
+        height: 47px;
     }
 
     .table-gold-list {
@@ -1138,6 +1148,10 @@
         line-height: 29px;
         text-transform: uppercase;
     }
+    .table-gold-item{
+        height: 96px;
+        width: 100px;
+    }
 
     .table-gold-title h1 {
         font-size: 22px;
@@ -1148,6 +1162,7 @@
     }
 
     #table-gold .table-gold-item img {
+        height: 85px;
         width: 85px;
     }
 

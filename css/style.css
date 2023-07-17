@@ -620,17 +620,30 @@ p,
 }
 
 .table-gold-list {
+    display: flex;
     position: absolute;
-    top: 30%;
+    top: 32%;
     left: 9%;
     text-align: center;
-    padding: 10px 0;
+    align-items: center;
+    flex-direction: column;
+    
 }
+.table-gold-item{
+    padding: 1px;
+    border-color: #fff;
+    border-style: dashed ;
+    border-radius: 50%;
+    height: 142px;
+    width: 145px;
+}
+
 
 .table-gold-item img {
     width: 134px;
-    height: 130;
-    border-radius: 50%;
+    margin: 6px;
+    height: 130px;
+    border-radius: 50%; 
 
 }
 
